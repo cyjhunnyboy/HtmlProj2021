@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML id属性</title>
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        HTML id属性
+            所有主流浏览器都支持class属性，例如：IE、火狐、谷歌、Safari等
+
+            定义和用法
+                id属性规定HTML元素的唯一的id。
+                id在HTML文档中必须是唯一的。
+                id属性可用作链接锚（link anchor），通过JavaScript（HTML DOM）或通过CSS为带有指定id的元素改变或添加样式。
+
+            HTML4.01 与HTML5之间的差异
+                在HTML5中, id属性可用于任何的HTML元素 (它会验证任何HTML元素。但不一定是有用)。
+                在HTML4.01中, id属性不能用于: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, 和<title>。
+                注意: HTML4.01对于id的值有严格的限制 (例如：在HTML4.01 id值不能以数字开头)。
+
+            语法
+                <element id="id">
+                属性值：id
+                描述：规定元素的唯一id。
+                名称规则：
+                    1、必须以字母A-Z或a-z开头
+                    2、其后的字符：字母(A-Za-z)、数字(0-9)、连字符("-")、下划线("_")、冒号(":") 以及点号(".")
+                    3、值对大小写敏感
+    -->
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">编辑文本</button>
+</body>
+</html>

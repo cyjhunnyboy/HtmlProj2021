@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML class属性</title>
+    <style>
+        h1.intro {
+            color: blue;
+        }
+        p.important {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HTML class属性
+            所有主流浏览器都支持class属性，例如：IE、火狐、谷歌、Safari等
+
+            定义和用法
+                class属性定义了元素的类名。
+                class属性通常用于指向样式表的类。但是，它也可以用于JavaScript中（通过HTML DOM）, 来修改HTML元素的类名。
+
+            HTML4.01 与HTML5之间的差异
+                在HTML5中, class属性可用于任何的HTML元素 (它会验证任何HTML元素。但不一定是有用)。
+                在HTML4.01中, class属性不能用于: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, 和 <title>。
+
+            语法
+                <element class="classname">
+                属性值：classname
+                描述：规定元素的类的名称。如需为一个元素规定多个类，用空格分隔类名。 <span class="left important">. HTML元素允许使用多个类。
+                名称规则：
+                    1、必须以字母A-Z或a-z开头
+                    2、可以是以下字符：(A-Za-z), 数字(0-9), 横杆("-"), 和下划线 ("_")
+                    3、在HTML中, 类名是区分大小写的
+    -->
+    <h1 class="intro">标题 1</h1>
+    <p>段落。</p>
+    <p class="important">注意：这是一个很重要的段落。:)</p>
+</body>
+</html>
