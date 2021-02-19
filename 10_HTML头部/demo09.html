@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML头部实例</title>
-    <base href="http://www.runoob.com/images/" target="_blank">
+    <base href="https://www.runoob.com/images/" target="_blank">
 </head>
 <body>
     <!--
@@ -11,9 +11,10 @@
             <base> - 定义了所有链接的URL
             使用<base>定义页面中所有链接默认的链接目标地址。
     -->
-    <img alt="runoob.com的logo" src="../images/logo.png" /> - 注意这里我们设置了图片的相对地址。能正常显示是因为我们在head部分设置了base标签，
-    该标签指定了页面上所有链接的默认URL，所以该图片的访问地址为"http://www.runoob.com/images/logo.png"
+    <p><img src="logo.png" alt="菜鸟教程"> - 注意这里我们设置了图片的相对地址。能正常显示是因为我们在head部分设置了base标签，
+        该标签指定了页面上所有链接的默认URL，所以该图片的访问地址为"http://www.runoob.com/images/logo.png"</p>
     <br><br>
-    <a href="//www.runoob.com">菜鸟教程</a> - 注意这个链接会在新窗口打开，即便它没有 target="_blank" 属性。因为在base标签里我们已经设置了target属性的值为 "_blank"。
+    <p><a href="https://www.runoob.com">菜鸟教程</a> - 注意这个链接会在新窗口打开，即便它没有target="_blank" 属性。
+        因为在base标签里我们已经设置了target属性的值为 "_blank"。</p>
 </body>
 </html>
