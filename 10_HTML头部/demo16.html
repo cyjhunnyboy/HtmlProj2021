@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML head元素</title>
+    <script src="myScript.js"></script>
+    <script>
+        function func1() {
+            document.getElementById("myText1").innerText = "Hava a nice day!";
+        }
+    </script>
+</head>
+<body>
+    <!--
+        HTML <script>标签
+            1、浏览器支持
+                所有主流浏览器都支持<script>标签。例如：IE、Firefox、Chrome、Safari等
+            2、标签定义及使用说明
+                <script>标签用于定义客户端脚本，比如：JavaScript。
+                <script>元素既可包含脚本语句，也可以通过"src"属性指向外部脚本文件。
+                JavaScript通常用于图像操作、表单验证以及动态内容更改。
+            3、提示和注释
+                注释：如果使用"src"属性，则<script>元素必须是空的。
+                提示：请参阅<noscript>元素，对于那些在浏览器中禁用脚本或者其浏览器不支持客户端脚本的用户来说，该元素非常有用。
+                注释：有多种执行外部脚本的方法：
+                    1）如果async="async"：脚本相对于页面的其余部分异步地执行（当页面继续进行解析时，脚本将被执行）
+                    2）如果不使用async且defer="defer"：脚本将在页面完成解析时执行
+                    3）如果既不使用async也不使用defer：在浏览器继续解析页面之前，立即读取并执行脚本
+            4、HTML4.01与HTML5之间的差异
+                在HTML4中，"type"属性是必需的，但在HTML5中是可选的。
+                "async"属性是HTML5中的新属性。
+                HTML5中不再支持HTML4.01中的某些属性："xml:space"。
+            5、HTML与XHTML之间的差异
+                在XHTML中，脚本中的内容类型声明为#PCDATA（代替CDATA），就是说会对实体进行解析。
+                这意味着，在XHTML中，应该编码所有特殊的字符，或者把所有内容嵌套在CDATA部分中：
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        var i=10;
+                        if (i<5)
+                        {
+                            // 代码内容
+                        }
+                        //]]>
+                    </script>
+
+                 HTML5中的新属性。
+                 属性               值               描述
+                 async             async            规定异步执行脚本（仅适用于外部脚本）。
+                 charset           charset          规定在脚本中使用的字符编码（仅适用于外部脚本）。
+                 defer             defer            规定当页面已完成解析后，执行脚本（仅适用于外部脚本）。
+                 src               URL              规定外部脚本的URL。
+                 type              MIME-type        规定脚本的MIME类型。
+                 xml:space         preserve         HTML5不支持。规定是否保留代码中的空白。
+             6、全局属性
+                <script>标签支持HTML的全局属性。
+    -->
+    <p id="myText1">Hello, World!</p>
+    <button ondblclick="func1()">内部script修改文本</button>
+    <p id="myText2">Hello, World!</p>
+    <button ondblclick="func2()">外部script修改文本</button>
+</body>
+</html>
