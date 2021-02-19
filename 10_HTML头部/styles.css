@@ -1,0 +1,11 @@
+h1 {
+    border: 1px solid black;
+    background: burlywood;
+    color: green;
+}
+
+p {
+    border: 1px solid black;
+    background: burlywood;
+    color: red;
+}
