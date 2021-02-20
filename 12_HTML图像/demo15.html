@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML图像标签</title>
+</head>
+<body>
+    <!--
+        HTML <map>标签
+            1、浏览器支持
+                所有主流浏览器都支持<img>标签。例如：IE、Chrome、Safari、Firefox等
+            2、标签定义及使用说明
+                <map>标签用于客户端图像映射。图像映射指带有可点击区域的一幅图像。
+                <img>中的usemap属性可引用<map>中的id或name属性（取决于浏览器），所以我们应同时向<map>添加id和name属性。
+                area元素永远嵌套在map元素内部。area元素可定义图像映射中的区域。
+            3、HTML4.01与HTML5之间的差异
+                注意: 在HTML5中, 如果id属性在<map>标签中指定, 则你必须同样指定name属性。
+            4、HTML与XHTML之间的差异
+                在XHTML中，name属性已经废弃，使用id属性替换它。
+                属性              值                   描述
+                name             mapname              必需，为image-map规定的名称。
+            5、全局属性
+                <map>标签支持全局属性，查看完整属性表HTML全局属性。
+            6、事件属性
+                <map>标签支持所有HTML事件属性。
+
+    -->
+    <p>点击太阳或其他行星，注意变化：</p>
+
+    <img src="../images/planets.gif" width="146" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.html">
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.html">
+        <area shape="circle" coords="124,58,8" alt="Venus" href="venus.html">
+    </map>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML图像标签</title>
+</head>
+<body>
+    <!--
+        HTML <area>标签
+            1、浏览器支持
+                所有主流浏览器都支持<area>标签。例如：IE、Chrome、Safari、Firefox等
+            2、标签定义及使用说明
+                <area>标签定义图像映射内部的区域（图像映射指的是带有可点击区域的图像）。
+                <area>元素始终嵌套在<map>标签内部。
+                注释： <img>标签中的usemap属性与<map>元素中的name相关联，以创建图像与映射之间的关系。
+            3、HTML4.01与HTML5之间的差异
+                HTML5提供了一些新属性，同时不再支持HTML4.01中的某些属性。
+            4、HTML与XHTML之间的差异
+                在HTML中，<area>标签没有结束标签。
+                在XHTML中，<area>标签必须正确地关闭。
+                属性              值                   描述
+                alt              text                 规定区域的替代文本。如果使用href属性，则该属性是必需的。
+                coords           coordinates          规定区域的坐标。
+                href             URL                  规定区域的目标URL。
+                hreflang         language_code        规定目标URL的语言。
+                media            media query          规定目标URL是为何种媒介/设备优化的。默认：all。
+                nohref           value                HTML5不支持。 规定没有相关链接的区域。
+                rel              alternate            规定当前文档与目标URL之间的关系。
+                                 author
+                                 bookmark
+                                 help
+                                 license
+                                 next
+                                 nofollow
+                                 noreferrer
+                                 prefetch
+                                 prev
+                                 search
+                                 tag
+                shape            default              规定区域的形状。
+                                 rect
+                                 circle
+                                 poly
+                target           _blank               规定在何处打开目标URL。
+                                 _parent
+                                 _self
+                                 _top
+                                 framename
+                type             MIME_type            规定目标URL的MIME类型。
+                                                      注：MIME = Multipurpose Internet Mail Extensions。
+            5、全局属性
+                <area>标签支持全局属性，查看完整属性表HTML全局属性。
+            6、事件属性
+                <eara>标签支持所有HTML事件属性。
+
+    -->
+    <p>点击太阳或其他行星，注意变化：</p>
+
+    <img src="../images/planets.gif" width="146" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.html">
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.html">
+        <area shape="circle" coords="124,58,8" alt="Venus" href="venus.html">
+    </map>
+</body>
+</html>

@@ -5,6 +5,44 @@
     <title>HTML图像标签</title>
 </head>
 <body>
-
+    <!--
+        HTML <img>标签
+            1、浏览器支持
+                所有主流浏览器都支持<img>标签。例如：IE、Chrome、Safari、Firefox等
+            2、标签定义及使用说明
+                <img>标签定义HTML页面中的图像。
+                <img>标签有两个必需的属性：src和alt。
+                注释：从技术上讲，图像并不会插入HTML页面中，而是链接到HTML页面上。<img>标签的作用是为被引用的图像创建占位符。
+                提示：通过在<a>标签中嵌套<img>标签，给图像添加到另一个文档的链接。
+            3、HTML4.01与HTML5之间的差异
+                HTML5中不支持以下属性：align、border、hspace、longdesc、vspace。
+                在HTML 4.01中，以下属性：align、border、hspace、vspace已废弃。
+            4、HTML与XHTML之间的差异
+                在HTML中，<img>标签没有结束标签。
+                在XHTML中，<img>标签必须被正确地关闭。
+                属性                  值                           描述
+                align	             top                          HTML5不支持。HTML4.01已废弃。规定如何根据周围的文本来排列图像。
+                                     bottom
+                                     middle
+                                     left
+                                     right
+                alt	                 text	                      规定图像的替代文本。
+                border	             pixels	                      HTML5不支持。HTML 4.01已废弃。规定图像周围的边框。
+                crossoriginNew	     anonymous                    设置图像的跨域属性
+                                     use-credentials
+                height	             pixels	                      规定图像的高度。
+                hspace	             pixels	                      HTML5不支持。HTML4.01已废弃。规定图像左侧和右侧的空白。
+                ismap	             ismap	                      将图像规定为服务器端图像映射。
+                longdesc	         URL	                      HTML5不支持。HTML4.01已废弃。指向包含长的图像描述文档的URL。
+                src	                 URL	                      规定显示图像的 URL。
+                usemap	             #mapname	                  将图像定义为客户器端图像映射。
+                vspace	             pixels	                      HTML5不支持。HTML4.01已废弃。 规定图像顶部和底部的空白。
+                width	             pixels	                      规定图像的宽度。
+             5、全局属性
+                 <img>标签支持HTML的全局属性。
+             6、事件属性
+                <img>标签支持HTML的事件属性。
+    -->
+    <img src="../images/smiley.gif" alt="Smiley face" width="32" height="32">
 </body>
 </html>
