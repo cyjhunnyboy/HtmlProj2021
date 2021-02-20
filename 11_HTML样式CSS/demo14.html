@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML样式标签</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!--
+        已弃用的标签和属性
+            在HTML4, 原来支持定义HTML元素样式的标签和属性已被弃用。这些标签将不支持新版本的HTML标签。
+            不建议使用的标签有: <font>, <center>, <strike>
+            不建议使用的属性: color和bgcolor.
+
+        HMTL <link>标签
+            1、浏览器支持
+                所有主流浏览器都支持<link>标签。例如：IE、Chrome、Safari、Firefox等
+            2、标签定义及使用说明
+                <link>标签定义文档与外部资源的关系。
+                <link>标签最常见的用途是链接样式表。
+                注意： link元素是空元素，它仅包含属性。
+                注意： 此元素只能存在于head部分，不过它可出现任何次数。
+            3、HTML4.01与HTML5之间的差异
+                一些HTML4.01属性在HTML5中不支持。
+                HTML5新增了"sizes"属性。
+            4、HTML与XHTML之间的差异
+                在HTML中，<link>标签没有结束标签。
+                在XHTML中，<link>标签必须被正确地关闭。
+                属性          值                             描述
+                charset       char_encoding                 HTML5不支持该属性。 定义被链接文档的字符编码方式。
+                href          URL                           定义被链接文档的位置。
+                hreflang      language_code	                定义被链接文档中文本的语言。
+                media         media_query                   规定被链接文档将显示在什么设备上。
+                rel           alternate                     必需。定义当前文档与被链接文档之间的关系。
+                              archives
+                              author
+                              bookmark
+                              external
+                              first
+                              help
+                              icon
+                              last
+                              license
+                              next
+                              nofollow
+                              noreferrer
+                              pingback
+                              prefetch
+                              prev
+                              search
+                              sidebar
+                              stylesheet
+                              tag
+                              up
+                rev           reversed relationship         HTML5不支持该属性。 定义被链接文档与当前文档之间的关系。
+                size          HeightxWidth                  定义了链接属性大小，只对属性rel="icon"起作用。
+                              any
+                target        _blank                        HTML5不支持该属性。 定义在何处加载被链接文档。
+                              _self
+                              _top
+                              _parent
+                              frame_name
+                type          MIME_type                     规定被链接文档的MIME类型。
+            5、全局属性
+                <link>标签支持全局属性，查看完整属性表HTML全局属性。
+            6、事件属性
+                <link>标签支持所有HTML事件属性。
+    -->
+    <h1>我是通过样式文件 styles.css 渲染后显示的。</h1>
+    <p>我也是。</p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 样式标签</title>
+    <style type="text/css">
+        h1 {
+            color: red;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HTML <style>标签
+            1、浏览器支持
+                所有主流浏览器都支持<style>标签。例如：IE、Firefox、Chrome、Safari等
+            2、标签定义及使用说明
+                <style>标签定义HTML文档的样式信息。
+                在<style>元素中，您可以规定在浏览器中如何呈现HTML文档。
+                每个HTML文档能包含多个<style>标签。
+            3、提示和注释
+                提示：如需链接外部样式表，请使用<link>标签。
+                提示：如需学习更多有关样式表的知识，请阅读我们的CSS教程。
+                注释：如果没有使用"scoped"属性，则每一个<style>标签必须位于head头部区域。
+            4、HTML4.01与HTML5之间的差异
+                "scoped"属性是HTML5中的新属性，它允许我们为文档的指定部分定义样式，而不是整个文档。
+                如果使用"scoped"属性，那么所规定的样式只能应用到style元素的父元素及其子元素。
+                属性              值                   描述
+                media             media_query         为样式表规定不同的媒体类型。
+                scoped            scoped              如果使用该属性，则样式仅仅应用到style元素的父元素及其子元素。
+                type              text/css            规定样式表的MIME类型。
+            5、全局属性
+                <style> 标签支持HTML的全局属性。
+            6、事件属性
+                <style> 标签支持HTML的事件属性。
+    -->
+    <h1>这是一个标题</h1>
+    <p>这是一个段落。</p>
+</body>
+</html>
