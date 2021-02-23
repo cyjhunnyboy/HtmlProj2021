@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格标签</title>
+</head>
+<body>
+    <!--
+        HTML <table>标签
+            1、浏览器支持
+                所有主流浏览器都支持 <table> 标签。例如：IE、Chome、Safari、Firefox等
+            2、标签定义及使用说明
+                a、<table>标签定义HTML表格
+                b、一个HTML表格包括<table>元素，一个或多个<tr>、<th>以及<td>元素。
+                c、<tr>元素定义表格行，<th>元素定义表头，<td>元素定义表格单元。
+                d、更复杂的HTML表格也可能包括<caption>、<col>、<colgroup>、<thead>、<tfoot>以及<tbody>元素。
+            3、HTML4.01与HTML5之间的差异
+                在HTML5中，仅支持"border"属性，并且只允许使用值 "1"或""。
+                属性                  值                       描述
+                align                left                     HTML5不支持。HTML4.01已废弃。 规定表格相对周围元素的对齐方式。
+                                     center
+                                     right
+                bgcolor              rgb(x,x,y)               HTML5不支持。HTML4.01已废弃。 规定表格的背景颜色。
+                                     #xxxxxx
+                                     colorname
+                border               1或""                    规定表格单元格是否拥有边框。
+                cellpadding          pixels                   HTML5不支持。规定单元格边沿与其内容之间的空白。
+                cellspacing          pixels                   HTML5不支持。规定单元格之间的空白。
+                frame                void                     HTML5不支持。规定外侧边框的哪个部分是可见的。
+                                     above
+                                     hsides
+                                     lhs
+                                     rhs
+                                     vsides
+                                     box
+                                     border
+                rules                none                     HTML5不支持。规定内侧边框的哪个部分是可见的。
+                                     groups
+                                     rows
+                                     cols
+                                     all
+                summary              text                     HTML5不支持。规定表格的摘要
+                width                pixels                   HTML5不支持。规定表格的宽度
+                                     %
+            4、全局属性
+                <table>标签支持HTML的全局属性。
+            5、事件属性
+                <table>标签支持HTML的事件属性。
+    -->
+    <table border="1">
+        <tr>
+            <th>Month</th>
+            <th>Saving</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+    </table>
+</body>
+</html>
