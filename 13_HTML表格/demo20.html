@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格标签</title>
+</head>
+<body>
+    <!--
+        HTML <th>标签
+            1、浏览器支持
+                所有主流浏览器都支持<th>标签。例如：IE、Chome、Safari、Firefox等
+            2、标签定义及使用说明
+                <th>标签定义HTML表格中的表头单元格。
+                HTML表格有两种单元格类型：
+                    表头单元格 - 包含头部信息（由<th>元素创建）
+                    标准单元格 - 包含数据（由<td>元素创建）
+                <th>元素中的文本通常呈现为粗体并且居中。
+                <td>元素中的文本通常是普通的左对齐文本。
+            3、提示和注释
+                提示：如果需要将内容横跨多个行或列，请使用rowspan和colspan属性！
+            4、HTML4.01与HTML5之间的差异
+                HTML5中不再支持 HTML4.01中的某些属性。
+                属性                  值                       描述
+                abbr                 text                     HTML 5不支持。规定表头单元格中内容的缩写版本。
+                align                left                     HTML 5不支持。 规定表头单元格内容的水平对齐方式。
+                                     right
+                                     center
+                                     justify
+                                     char
+                axis                 category_name            HTML5 不支持。 对表头单元格进行分类。
+                bgcolor              rbg(x,x,x)               HTML5 不支持。HTML 4.01 已废弃。 规定表头单元格的背景颜色。
+                                     #xxxxxx
+                                     colorname
+                char                 character                HTML5 不支持。 规定根据哪个字符来进行内容的对齐。
+                charoff              number                   HTML5 不支持。 规定对齐字符的偏移量。
+                colspan              number                   规定表头单元格可横跨的列数。
+                headers              header_id                规定与表头单元格相关联的一个或多个表头单元格。
+                height               pixels                   HTML5 不支持。HTML 4.01 已废弃。 规定表头单元格的高度。
+                                     %
+                nowrap               nowrap                   HTML5 不支持。HTML 4.01 已废弃。 规定表头单元格中的内容是否折行。
+                rowspan              number                  规定表头单元格可横跨的行数。
+                scope                col                     规定表头单元格是否是行、列、行组或列组的头部。
+                                     colgroup
+                                     row
+                                     rowgroup
+                valign               top                     HTML5 不支持。 规定表头单元格内容的垂直排列方式。
+                                     middle
+                                     bottom
+                                     baseline
+                width                pixels                  HTML5 不支持。HTML 4.01 已废弃。 规定表头单元格的宽度。
+                                     %
+            5、全局属性
+                <th>标签支持HTML的全局属性。
+            6、事件属性
+                <th>标签支持所有HTML的事件属性。
+    -->
+    <table border="1">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$300</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格标签</title>
+</head>
+<body>
+    <!--
+        HTML <caption>标签
+            1、浏览器支持
+                所有主流浏览器都支持<caption>标签。例如：IE、Chome、Safari、Firefox等
+            2、标签定义及使用说明
+                <caption>标签定义表格的标题。
+                <caption>标签必须直接放置到<table>标签之后。
+                您只能对每个表格定义一个标题。
+                提示：通常这个标题会被居中于表格之上。然而，CSS属性"text-align"和"caption-side"能用来设置标题的对齐方式和显示位置。
+            3、HTML4.01与HTML5之间的差异
+                HTML5不支持align属性。
+                HTML4.01已废弃align属性。
+                属性              值               描述
+                align            left             HTML5不支持。HTML4.01已废弃。定义标题的对齐方式。
+                                 right
+                                 top
+                                 bottom
+            4、全局属性
+                <caption>标签支持HTML的全局属性
+            5、事件属性
+                <caption>标签支持HTML的事件属性
+    -->
+    <table border="1">
+        <caption style="text-align: center;caption-side: top">Monthly Savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$400</td>
+        </tr>
+    </table>
+</body>
+</html>

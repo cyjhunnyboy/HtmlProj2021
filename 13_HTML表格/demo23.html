@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML表格标签</title>
+</head>
+<body>
+    <!--
+        HTML <colgroup>标签
+            1、浏览器支持
+                所有主流浏览器都支持<colgroup>标签。例如：IE、Chome、Safari、Firefox等
+            2、标签定义及使用说明
+                <colgroup>标签用于对表格中的列进行组合，以便对其进行格式化。
+                通过使用<colgroup>标签，可以向整个列应用样式，而不需要重复为每个单元格或每一行设置样式。
+                注释：只能在<table>元素之内，在任何一个<caption>元素之后，在任何一个<thead>、<tbody>、<tfoot>、<tr>元素之前使用<colgroup>标签。
+                提示：如果想对<colgroup>中的某列定义不同的属性，请在<colgroup>标签内使用<col>标签。
+            3、HTML4.0.1与HTML5之间的差异
+                HTML5中不再支持 HTML4.01中的大部分属性。
+                属性                      值                           描述
+                align                    left                         HTML5不支持。规定在列组合中的水平对齐方式。
+                                         right
+                                         center
+                                         justify
+                                         char
+                char                     character                    HTML5不支持。规定根据哪个字符来对齐列组中的内容。
+                charoff                  number                       HTML5不支持。规定第一个对齐字符的偏移量。
+                span                     number                       规定列组应该横跨的列数。
+                valign                   top                          HTML5不支持。定义在列组合中内容的垂直对齐方式。
+                                         middle
+                                         bottom
+                                         baseline
+                width                    pixels                       HTML5不支持。规定列组合的宽度。
+                                         %
+                                         relative_length
+            4、全局属性
+                <colgroup>标签支持HTML的全局属性。
+            5、事件属性
+                <colgroup>标签支持HTML的事件属性。
+    -->
+    <table border="1">
+        <caption style="text-align: center; caption-side: top">My Funny</caption>
+        <colgroup>
+            <col span="2" style="background-color: red">
+            <col style="background-color: yellow">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My First HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869204</td>
+            <td>My First CSS</td>
+            <td>$49</td>
+        </tr>
+    </table>
+</body>
+</html>
