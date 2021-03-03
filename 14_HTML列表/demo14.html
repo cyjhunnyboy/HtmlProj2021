@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 列表</title>
+</head>
+<body>
+    <!--
+        HTML 列表标签
+            HTML <ol>标签定义有序列表
+            1、浏览器支持
+                支持主流浏览器，如：Chrome、IE、Firefox、Safari等
+            2、标签定义及使用说明
+                <ol>标签定义了一个有序列表，列表排序以数字来显示。
+                使用<li>标签定义列表选项。
+            3、提示和注释
+                可以使用CSS来渲染，详细查看CSS列表
+                无序列表，可以使用<ul>标签
+            4、HTML4.0.1与HTML5中的差异
+                在HTML4.0.1中"start"和"type"属性已经废弃，HTML5不支持该属性。
+                "reversed"属性是HTML5中的新属性。
+                在HTML4.0.1中"compact"属性已经废弃，在HTML5中不支持该属性。
+                属性               值                          描述
+                compact           compact                     HTML5中不支持，不赞成使用。请使用样式取代它。 规定列表呈现的效果比正常情况更小巧。
+                reversed          reversed                    指定列表倒序(9,8,7...)
+                start             number                      一个整数值属性，指定了列表编号的起始值。这个属性 HTML4中弃用，但是在HTML5中被重新引入。
+                type              a小写字母编号                 规定列表的类型。不赞成使用。请使用样式代替。
+                                  A大写字母编号
+                                  i小写罗马数字编号
+                                  I大写罗马数字编号
+                                  1数字编号（默认）
+            5、全局属性
+                <ol>标签支持全局属性，查看完整属性列表HTML全局属性。
+            6、事件属性
+                <ol>标签支持所有HTML事件属性。
+    -->
+    <!--列表嵌套-->
+    <h4>列表嵌套 - 有序列表中插入无序列表：</h4>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black Tee</li>
+                <li>Green Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ol>
+</body>
+</html>
